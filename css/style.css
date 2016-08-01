@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+body{
+  margin: auto 100px;
+  background-color: white;;
+}
+h1{
+    margin: 30px auto;
+    font-size: 40px; /* Размер шрифта */
+    color: black; /* Цвет текста */
+
+}
+header{
+  height: 40px;
+  background: #303030; /* Цвет фона */
+  color: white; /* Цвет текста */
+  font-size: 18px;
+}
+footer { /* Нижний блок */
+ background: #c3c8c2; /* Цвет фона */
+ height: 40px;
+ color: black; /* Цвет текста */
+ clear: left; /* Отменяем действие float */
+}
+#sidebar{
+  float: left; /* Обтекание справа */
+  width: 25%; /* Ширина колонки */
+  line-height: 30px;
+  margin: 30px 30px auto auto; /* Значения отступов */
+}
+#content { /* Правая колонка */
+ margin: 30px auto 20px 30%; /* Значения отступов */
+ padding: 5px; /* Поля вокруг текста */
+ }
+.text{
+  padding: 30px 20px;
+}
+.brd{
+  border: 1px solid #c3c8c2; /* Параметры рамки вокруг */
+  margin-top: -1px;
+  padding: 5px 5px 5px 30px; /* Поля вокруг текста */
+}
+.i_menu{
+  display: block;
+  margin: auto;
+  float: left;
+  width: 100px;
+  padding-top: 10px;
+  padding-left:30px;
+}
+.cr{
+  margin: 10px auto 10px 30px;
+  float: right;;
+  width: 200px
+}
+.fig{
+  text-align: center;
+  border: 1px solid #c3c8c2; /* Параметры рамки */
+}
+a{
+  text-decoration: none
+  }
+.up:hover{
+  text-decoration: none;
+}
+.down:hover {
+    text-decoration: underline; /* Добавляем подчеркивание */
+}
+.side:hover{
+     text-decoration: none;
+     padding-left: 15px;
+     background-color: grey;
+}
