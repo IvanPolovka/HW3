@@ -1,75 +1,132 @@
 *{
   margin: 0;
   padding: 0;
-  }
+}
 body{
-  margin: auto 100px;
-  background-color: white;;
+  background: #f9f9f9;
+  font-family: tahoma, arial, sans-serif;
 }
-h1{
-    margin: 30px auto;
-    font-size: 40px; /* Размер шрифта */
-    color: black; /* Цвет текста */
+.wrapper{
+  margin: 0 auto;
+  padding: 0 45px;
+  width: 970px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(153,153,153,1);
+  box-shadow: 0px 0px 4px 0px rgba(153,153,153,1);
+}
 
+/*HEADER*/
+
+.header{
+  padding-top: 50px;
+  margin-bottom: 40px;
 }
-header{
-  height: 40px;
-  background: #303030; /* Цвет фона */
-  color: white; /* Цвет текста */
-  font-size: 18px;
+
+.menu{
+position: relative;
+overflow: hidden;
+margin-top: 40px;
+background: #484848; /* Old browsers */
+background: -moz-linear-gradient(top,  #484848 0%, #595959 100%, #303030 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #484848 0%,#595959 100%,#303030 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #484848 0%,#595959 100%,#303030 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-footer { /* Нижний блок */
- background: #c3c8c2; /* Цвет фона */
- height: 40px;
- color: black; /* Цвет текста */
- clear: left; /* Отменяем действие float */
-}
-#sidebar{
-  float: left; /* Обтекание справа */
-  width: 25%; /* Ширина колонки */
-  line-height: 30px;
-  margin: 30px 30px auto auto; /* Значения отступов */
-}
-#content { /* Правая колонка */
- margin: 30px auto 20px 30%; /* Значения отступов */
- padding: 5px; /* Поля вокруг текста */
- }
-.text{
-  padding: 30px 20px;
-}
-.brd{
-  border: 1px solid #c3c8c2; /* Параметры рамки вокруг */
-  margin-top: -1px;
-  padding: 5px 5px 5px 30px; /* Поля вокруг текста */
-}
-.i_menu{
-  display: block;
-  margin: auto;
+
+.menu li{
   float: left;
-  width: 100px;
-  padding-top: 10px;
-  padding-left:30px;
+  list-style: none;
 }
-.cr{
-  margin: 10px auto 10px 30px;
-  float: right;;
-  width: 200px
+
+.menu a{
+  display: block;
+  color: #fff;
+  line-height: 40px;
+  text-decoration: none;
+  padding: 0 40px;
+  font-size: 15px;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
 }
-.fig{
-  text-align: center;
-  border: 1px solid #c3c8c2; /* Параметры рамки */
+
+.menu a:hover{
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
+  background: #343434; /* Old browsers */
+  background: -moz-linear-gradient(top,  #343434 0%, #363636 100%, #303030 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #343434 0%,#363636 100%,#303030 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #343434 0%,#363636 100%,#303030 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-a{
-  text-decoration: none
-  }
-.up:hover{
+
+/*CONTENT*/
+.content{
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar{
+  float: left;
+  width: 240px;
+}
+.sidebar-menu{
+  border: 1px solid #c8c8c8;
+}
+.sidebar-menu li{
+  border-top: 1px solid #c8c8c8;
+}
+.sidebar-menu li:first-child{
+  border: none;
+}
+.sidebar-menu a{
+  display: block;
+  padding-left: 20px;
+  line-height: 40px;
+  color: #636363;
   text-decoration: none;
 }
-.down:hover {
-    text-decoration: underline; /* Добавляем подчеркивание */
+.sidebar-menu a:hover{
+  padding-left: 35px;
+  background: #f9f9f9;
 }
-.side:hover{
-     text-decoration: none;
-     padding-left: 15px;
-     background-color: grey;
+.product{
+  float: right;
+  width: 680px;
+}
+.product-img{
+  padding: 40px 0;
+  border: 1px solid #c8c8c8;
+  text-align: center;
+}
+.description{
+  padding: 30px 20px 0 20px;
+  line-height: 21px;
+  font-size: 13px;
+  color: #2c2c2c;
+}
+/*FOOTER*/
+.footer{
+padding: 50px 0;
+}
+.footer-menu{
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e1;
+}
+.footer-menu li{
+  float: left;
+  list-style: none;
+  line-height: 40px;
+}
+.footer-menu .copyright{
+  float: right;
+  padding-right: 26px;
+}
+.footer-menu a{
+  display: block;
+  padding: 0 50px;
+  color: #2c2c2c;
+  text-decoration: none;
+}
+.footer-menu a:hover{
+  text-decoration: underline;
 }
